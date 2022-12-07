@@ -24,6 +24,7 @@ ul {
   --shadow: rgba(0, 0, 0, 0.15);
   --background: rgb(229, 229, 229);
   --border: rgb(238, 238, 238);
+  --ImgOverlay: rgba(47, 48, 58, 0.4);
 }
 
 body {
@@ -73,16 +74,24 @@ body {
   font-size: 0.875rem;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-.link-up-list {
-  width: 260px;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
+.link-up-list {
+  /* width: 260px; */
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.link-up {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .link-up-mail {
+  color: var(--grey);
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.14;
@@ -90,6 +99,7 @@ body {
 }
 
 .link-up-tel {
+  color: var(--grey);
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.14;
@@ -97,9 +107,18 @@ body {
 }
 
 .header {
+  background-color: var(--dark);
+}
+.header-bg {
   display: flex;
   flex-direction: column;
-  background-color: var(--dark);
+  margin: 0 auto;
+  max-width: 1600px;
+  background-image: url("../images/bg.jpg"),
+    linear-gradient(to top, var(--ImgOverlay), var(--ImgOverlay));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .title {

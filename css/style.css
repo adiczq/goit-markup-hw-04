@@ -27,6 +27,7 @@ ul {
   --ImgOverlay: rgba(47, 48, 58, 0.4);
   --iconbg: rgb(245, 244, 250);
   --socialIcon: rgb(175, 177, 184);
+  --socialIconBg: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -300,10 +301,15 @@ body {
   color: var(--white);
 }
 
-.foot {
+.footer {
   padding: 60px 0 60px 0;
   background-color: var(--dark);
   color: var(--white);
+  display: flex;
+  gap: 70px;
+}
+
+.foot-logo {
   display: flex;
   flex-direction: column;
 }
@@ -317,6 +323,26 @@ body {
   gap: 9px;
   display: flex;
   flex-direction: column;
+}
+
+.footer-icons-box {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.footer-icons {
+  fill: var(--socialIcon);
+  background-color: var(--socialIconBg);
+  border-radius: 50%;
+}
+
+.footer-icons:hover,
+.footer-icons:active,
+.footer-icons:focus {
+  fill: var(--white);
+  background-color: var(--blue);
+  border-radius: 50%;
 }
 
 .navi-list-link:hover,
@@ -369,8 +395,7 @@ body {
   margin: 0 0 30px 0;
 }
 
-.work-card:hover,
-.work-card:focus {
+.work-card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }

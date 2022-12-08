@@ -246,35 +246,21 @@ body {
 }
 
 .team-icons-box {
-  /* width: 206px; */
-  /* height: 56px; */
   margin-bottom: 30px;
   display: flex;
   gap: 10px;
-  /* justify-content: space-between; */
-}
-.team-icons-card {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .team-icons {
-  width: 20px;
-  height: 20px;
   fill: var(--socialIcon);
 }
-.team-icons:hover {
-  fill: var(--white);
-}
 
-.team-icons-card:hover {
+.team-icons:hover,
+.team-icons:active,
+.team-icons:focus {
   fill: var(--white);
-  background: var(--blue);
-  border: 1px solid var(--blue);
-  border-radius: 22px;
+  background-color: var(--blue);
+  border-radius: 50%;
 }
 
 .client-list {
@@ -341,6 +327,7 @@ body {
 .link-up-tel:hover,
 .link-bottom:focus {
   color: var(--blue);
+  fill: var(--blue);
 }
 
 .buttons-list {
@@ -380,6 +367,12 @@ body {
 
 .work-card {
   margin: 0 0 30px 0;
+}
+
+.work-card:hover,
+.work-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .desc-border {

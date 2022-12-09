@@ -57,7 +57,6 @@ body {
 }
 
 .logo-up {
-  /* margin-left: 50px; */
   font-weight: 700;
   font-size: 1.625rem;
   line-height: 1.19;
@@ -109,9 +108,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-.header {
-  background-color: var(--dark);
-}
 .header-bg {
   display: flex;
   flex-direction: column;
@@ -221,7 +217,6 @@ body {
   flex-direction: column;
   align-items: center;
   width: 270px;
-  /* height: 368px; */
   background: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -256,9 +251,12 @@ body {
   fill: var(--socialIcon);
 }
 
-.team-icons:hover,
-.team-icons:active,
-.team-icons:focus {
+.icons-link:hover .team-icons,
+.icons-link:active .team-icons,
+.icons-link:focus .team-icons,
+.icons-link:hover .footer-icons,
+.icons-link:active .footer-icons,
+.icons-link:focus .footer-icons {
   fill: var(--white);
   background-color: var(--blue);
   border-radius: 50%;
@@ -276,6 +274,7 @@ body {
   border: 1px solid var(--socialIcon);
   border-radius: 4px;
 }
+
 .client-icons:hover {
   fill: var(--blue);
   border: 1px solid var(--blue);
@@ -290,10 +289,12 @@ body {
 }
 
 .highlightblack {
+  font-weight: 700;
   color: var(--black);
 }
 
 .highlightwhite {
+  font-weight: 700;
   color: var(--white);
 }
 
@@ -337,21 +338,14 @@ body {
   border-radius: 50%;
 }
 
-.footer-icons:hover,
-.footer-icons:active,
-.footer-icons:focus {
-  fill: var(--white);
-  background-color: var(--blue);
-  border-radius: 50%;
-}
-
 .navi-list-link:hover,
 .link-up-mail:hover,
 .link-up-tel:hover,
 .link-bottom:hover,
 .link-up-mail:focus,
-.link-up-tel:hover,
-.link-bottom:focus {
+.link-up-tel:focus,
+.link-bottom:focus,
+.navi-list-link:focus {
   color: var(--blue);
   fill: var(--blue);
 }
@@ -376,7 +370,8 @@ body {
   padding: 6px 22px 6px 22px;
 }
 
-.buttons:hover {
+.buttons:hover,
+.buttons:focus {
   background: var(--blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);

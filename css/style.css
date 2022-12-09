@@ -28,6 +28,7 @@ ul {
   --iconbg: rgb(245, 244, 250);
   --socialIcon: rgb(175, 177, 184);
   --socialIconBg: rgba(255, 255, 255, 0.1);
+  --bottomLink: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -80,27 +81,20 @@ body {
 }
 
 .link-up-list {
-  /* width: 260px; */
   display: flex;
   justify-content: space-between;
   gap: 30px;
+  align-items: center;
+}
+
+.link-up-icon {
+  margin-right: 10px;
 }
 
 .link-up {
   display: flex;
   align-items: center;
-  gap: 10px;
-}
-
-.link-up-mail {
-  color: var(--grey);
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
-.link-up-tel {
+  fill: var(--grey);
   color: var(--grey);
   font-weight: 500;
   font-size: 0.875rem;
@@ -113,8 +107,8 @@ body {
   flex-direction: column;
   margin: 0 auto;
   max-width: 1600px;
-  background-image: url("../images/bg.jpg"),
-    linear-gradient(to top, var(--ImgOverlay), var(--ImgOverlay));
+  background-image: linear-gradient(to top, var(--ImgOverlay), var(--ImgOverlay)),
+    url("../images/bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -158,6 +152,7 @@ body {
 }
 
 .lorem {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.14;
@@ -299,7 +294,7 @@ body {
 }
 
 .link-bottom {
-  color: var(--white);
+  color: var(--bottomLink);
 }
 
 .footer {
@@ -320,6 +315,7 @@ body {
 }
 
 .address {
+  font-style: normal;
   margin-top: 20px;
   gap: 9px;
   display: flex;
@@ -339,11 +335,9 @@ body {
 }
 
 .navi-list-link:hover,
-.link-up-mail:hover,
-.link-up-tel:hover,
+.link-up:hover,
 .link-bottom:hover,
-.link-up-mail:focus,
-.link-up-tel:focus,
+.link-up:focus,
 .link-bottom:focus,
 .navi-list-link:focus {
   color: var(--blue);

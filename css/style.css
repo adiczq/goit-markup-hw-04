@@ -258,7 +258,8 @@ body {
   fill: var(--white);
   background-color: var(--blue);
   border-radius: 50%;
-  transition: 600ms;
+  transition: 250ms;
+  cubic-bezier: (0.4, 0, 0.2, 1);
 }
 
 .client-list {
@@ -266,18 +267,32 @@ body {
   justify-content: space-between;
 }
 
-.client-icons {
-  fill: var(--socialIcon);
+.client-icons-box {
+  width: 170px;
+  height: 92px;
   border: 1px solid var(--socialIcon);
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-.client-icons:hover {
-  fill: var(--blue);
+.client-icons {
+  fill: var(--socialIcon);
+}
+
+.client-icons-box:hover {
   border: 1px solid var(--blue);
   border-radius: 4px;
-  cursor: pointer;
-  transition: 800ms;
+  transition: 250ms;
+  cubic-bezier: (0.4, 0, 0.2, 1);
+}
+
+.client-icons-box:hover .client-icons {
+  fill: var(--blue);
+  transition: 250ms;
+  cubic-bezier: (0.4, 0, 0.2, 1);
 }
 
 .logo-bottom {
@@ -347,7 +362,8 @@ body {
 .navi-list-link:focus {
   color: var(--blue);
   fill: var(--blue);
-  transition: 200ms;
+  transition: 250ms;
+  cubic-bezier: (0.4, 0, 0.2, 1);
 }
 
 .buttons-list {
@@ -378,7 +394,8 @@ body {
   border-radius: 4px;
   color: var(--white);
   border: none;
-  transition: 200ms;
+  transition: 250ms;
+  cubic-bezier: (0.4, 0, 0.2, 1);
 }
 
 .work-list {
@@ -394,7 +411,8 @@ body {
 .work-card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: 300ms;
+  transition: 250ms;
+  cubic-bezier: (0.4, 0, 0.2, 1);
 }
 
 .desc-border {

@@ -358,13 +358,13 @@ body {
 }
 
 .navi-list-link:hover,
+.navi-list-link:focus,
 .link-up-box:hover,
-.link-bottom:hover,
-.link-up:hover,
-.link-up:focus,
 .link-up-box:focus,
-.link-bottom:focus,
-.navi-list-link:focus {
+.link-up-box:hover .link-up,
+.link-up-box:focus .link-up,
+.link-bottom:hover,
+.link-bottom:focus {
   color: var(--blue);
   fill: var(--blue);
   transition: 250ms;
